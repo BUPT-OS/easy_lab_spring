@@ -1,7 +1,7 @@
 # magic print
 
 - [magic print](#magic-print)
-  - [1. 截止: 2025.12.24 23:59](#1-截止-20251224-2359)
+  - [1. 截止: TODO:](#1-截止-todo)
   - [2. lab内容](#2-lab内容)
     - [2.1. 背景](#21-背景)
     - [2.2. 环境配置](#22-环境配置)
@@ -21,7 +21,7 @@
     - [4.2. gdb调试](#42-gdb调试)
   - [参考资料](#参考资料)
 
-## 1. 截止: 2026.3.31 23:59
+## 1. 截止: TODO:
 
 TODO: 修改TOC
 
@@ -85,8 +85,7 @@ TODO: 修改TOC
 git clone https://github.com/BUPT-OS/easy_lab.git
 
 # 网络访问有问题的同学也可以clone gitee镜像，两个仓库是同步的：
-# TODO:
-# git clone https://gitee.com/stevenFreeTo/easy_lab.git
+# git clone https://gitee.com/tobeape6ehok/easy_lab_spring.git
 ```
 #### 2.2.5. 使用dev container启动
 
@@ -95,7 +94,6 @@ git clone https://github.com/BUPT-OS/easy_lab.git
 
 打开的时候`.devontainer`要在第一层文件夹：
 
-TODO:
 ![container](img/container.png)
 
 按ctrl+shift+P或者F1，输入reopen.. 选择下面这个选项即可使用dev container
@@ -115,7 +113,7 @@ TODO:
 
 > 完成任务1其实只需要更改`print.cpp`中一处即可。
 
-在确定bug已经被成功修复之后，你需要生成patch，提交到评测平台来验证bug是否已经被修复。关于生成patch，可以参考[链接](https://github.com/rust-real-time-os/os_lab/tree/lab1#%E6%8F%90%E4%BA%A4)。
+在确定bug已经被成功修复之后，你需要生成git patch，提交到评测平台来验证bug是否已经被修复。关于生成patch的方法，可以参考[链接](https://github.com/rust-real-time-os/os_lab/tree/lab1#%E6%8F%90%E4%BA%A4)。
 
 ### 2.5. 任务2
 
@@ -156,11 +154,11 @@ if(i == 8 || i == 9) continue;
 
 ## 3. 提交方式、评分规则、deadline
 
-提交方式：将patch和pdf文档提交到评测平台（http://10.161.28.28:8765/ ）。
+提交方式：将patch和pdf文档提交到评测平台（TODO: ）。
 
 评分规则：patch 10分 (提交patch后成功修复的情况下得到10分)；文档90分。
 
-deadline: 2025/12/24 23:59:59
+deadline: TODO:
 
 ## 4. 基础知识引导
 
