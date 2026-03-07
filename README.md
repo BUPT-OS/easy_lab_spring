@@ -80,11 +80,12 @@
 > 也可以从Github上下载整个项目的压缩包，但最好是clone，这样有更新就可以拉取到了。
 
 ```bash
-git clone https://github.com/BUPT-OS/easy_lab.git
+git clone https://github.com/BUPT-OS/easy_lab_spring.git
 
 # 网络访问有问题的同学也可以clone gitee镜像，两个仓库是同步的：
 # git clone https://gitee.com/tobeape6ehok/easy_lab_spring.git
 ```
+
 #### 2.2.5. 使用dev container启动
 
 使用vscode打开项目文件夹：
@@ -152,7 +153,7 @@ if(i == 8 || i == 9) continue;
 
 ## 3. 提交方式、评分规则、deadline
 
-提交方式：将patch和pdf文档提交到评测平台（评测平台的链接后续通知，请同学们先做lab）。
+提交方式：将patch和pdf文档提交到评测平台（链接见微信群通知），提交到平台后会自动运行代码并且评分。
 
 评分规则：本lab满分100分，包含patch 10分 (提交patch后成功修复的情况下得到10分)、文档90分。
 
