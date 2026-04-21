@@ -1,0 +1,17 @@
+# Build outputs
+vm_sim
+*.o
+src/*.o
+tests/test_phase*
+!tests/test_phase*.c
+
+# IDE / Editor
+compile_commands.json
+.cache/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Test artifacts
+/tmp/vm_sim_*

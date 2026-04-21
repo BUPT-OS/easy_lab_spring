@@ -1,0 +1,50 @@
+# clang-format 配置文件
+# 基于 LLVM 风格，针对内核/系统编程做了调整
+
+# 基础风格
+BasedOnStyle: LLVM
+
+# 缩进
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ContinuationIndentWidth: 4
+
+# 大括号换行
+BreakBeforeBraces: Linux
+
+# 列宽限制
+ColumnLimit: 100
+
+# 指针和引用对齐
+PointerAlignment: Right
+ReferenceAlignment: Right
+
+# 函数声明和定义
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakAfterReturnType: None
+
+# 空格
+SpaceAfterCStyleCast: true
+SpaceBeforeParens: ControlStatements
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+
+# 对齐
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignTrailingComments: true
+
+# 注释
+ReflowComments: true
+
+# 排序
+SortIncludes: true
+IncludeBlocks: Regroup
+
+# 其他
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+IndentCaseLabels: false

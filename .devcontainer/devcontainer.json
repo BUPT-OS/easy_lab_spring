@@ -1,0 +1,31 @@
+{
+    "name": "Lab4 VM Simulator",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": true,
+            "configureZshAsDefaultShell": true,
+            "installOhMyZsh": true,
+            "upgradePackages": true
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "llvm-vs-code-extensions.vscode-clangd",
+                "ms-vscode.makefile-tools",
+                "GitHub.copilot"
+            ],
+            "settings": {
+                "C_Cpp.intelliSenseEngine": "disabled",
+                "editor.formatOnSave": true,
+                "files.trimTrailingWhitespace": true,
+                "terminal.integrated.defaultProfile.linux": "zsh"
+            }
+        }
+    },
+    "postCreateCommand": "echo '✅ VM Simulator Lab 环境已就绪！' && echo '运行 make 编译项目' && echo '运行 make test1 测试 Phase 1' && echo '运行 make test-all 运行所有测试'",
+    "remoteUser": "vscode"
+}
