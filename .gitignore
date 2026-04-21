@@ -1,0 +1,36 @@
+# Build artifacts
+test_functional
+test_benchmark
+test_functional_solution
+test_benchmark_solution
+
+# Object files
+*.o
+src/*.o
+tests/*.o
+
+# Debug files
+*.dSYM/
+core
+core.*
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cache/
+
+# Compile database
+compile_commands.json
+
+# Solution file (don't commit to student repos)
+# src/my_malloc_solution.c
+
+# Temporary files
+*.tmp
+*.log
+
+# Shared libraries
+*.so

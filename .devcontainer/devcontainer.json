@@ -1,0 +1,40 @@
+{
+  "name": "Lab4 Custom Malloc",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".",
+  },
+
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "configureZshAsDefaultShell": true,
+      "installOhMyZsh": true,
+      "upgradePackages": false,
+    },
+  },
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+        "C_Cpp.default.cStandard": "c17",
+        "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+        "editor.formatOnSave": false,
+        "files.trimTrailingWhitespace": true,
+      },
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.makefile-tools",
+        "vadimcn.vscode-lldb",
+        "jeff-hykin.better-c-syntax",
+        "streetsidesoftware.code-spell-checker",
+      ],
+    },
+  },
+
+  "postCreateCommand": "make clean",
+
+  "remoteUser": "root",
+}
