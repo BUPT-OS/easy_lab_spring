@@ -1,0 +1,31 @@
+{
+    "name": "Lab5 Lock Lab",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": true,
+            "configureZshAsDefaultShell": true,
+            "installOhMyZsh": true,
+            "upgradePackages": true
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "llvm-vs-code-extensions.vscode-clangd",
+                "ms-vscode.makefile-tools",
+                "GitHub.copilot"
+            ],
+            "settings": {
+                "C_Cpp.intelliSenseEngine": "disabled",
+                "editor.formatOnSave": true,
+                "files.trimTrailingWhitespace": true,
+                "terminal.integrated.defaultProfile.linux": "zsh"
+            }
+        }
+    },
+    "postCreateCommand": "echo 'Lab5 Lock Lab 环境已就绪！' && echo '运行 cmake -S . -B build 编译配置' && echo '运行 cmake --build build 编译项目' && echo '运行 cmake --build build --target run_all_tests 运行所有测试'",
+    "remoteUser": "vscode"
+}
