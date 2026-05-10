@@ -34,6 +34,7 @@ TEST_FUNC_BIN = test_functional
 
 # Shared library
 LIB_NAME = libmymalloc.so
+LIB_SOL_NAME = libmymalloc_solution.so
 
 # Default target
 .PHONY: all
@@ -50,8 +51,10 @@ $(LIB_NAME): $(STUDENT_SRC)
 # Build shared library
 .PHONY: lib
 lib: $(LIB_NAME)
+	ln -sf $(LIB_NAME) $(LIB_SOL_NAME)
 	@echo "============================================"
 	@echo "Built shared library: $(LIB_NAME)"
+	@echo "Compatibility alias: $(LIB_SOL_NAME)"
 	@echo "Usage: LD_PRELOAD=./$(LIB_NAME) <program>"
 	@echo "============================================"
 
