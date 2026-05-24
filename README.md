@@ -1,5 +1,7 @@
 # Ext File System Data Recovery (进阶版)
 
+> **DDL: 2026年6月14日 23:59**
+
 Ext（Extended Filesystem）是 Linux 系统中最主流、最成熟的日志型文件系统。
 
 从发展历程来看，最早的 Ext2（于 1993 年加入 Linux 内核）奠定了 Linux 文件系统的基本框架，包括 Inode、块组（Block Group）等核心概念。然而，Ext2 最大的软肋在于它是一个非日志文件系统，这意味着在系统意外断电或崩溃时，文件系统极易处于不一致状态，重启后必须进行耗时的全盘扫描（fsck）来修复错误，这对于大容量硬盘来说几乎是灾难性的。
@@ -243,7 +245,7 @@ extern errcode_t ext2fs_dir_iterate2(ext2_filsys fs,	// 使用ext2fs_open打开�
 
 ### 4.4. 提交
 
-DDL: 2026年6月14日 23:59
+**DDL: 2026年6月14日 23:59**
 
 本Lab6进阶版实验分为两部分评分：
 
